@@ -18,12 +18,12 @@ body {
 /*     display: flex;
     justify-content: center; */
     width: 80%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     border: 2px solid black;
-    margin: 0 auto;
-    padding: 0 10% 1rem;
+    margin: 0 auto 4rem;
+    padding: 0 10% 1.5rem;
     box-shadow: 0 1.2rem 25px 5px goldenrod;
     border-radius: 1rem;
 }
@@ -41,7 +41,7 @@ header {
 
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     grid-column: 1 / -1;
 }
 
@@ -110,6 +110,41 @@ img {
     border-radius: 10%;
     background-color: blue;
     text-align: center;
+}
+
+.divider {
+    margin: 5rem 0;
+    justify-self: center;
+    width: 100%;
+    border: 2px solid black;
+}
+
+h2 {
+    font-size: 3rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+.cv-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 1.6rem;
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+}
+
+.cv-header {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.cv-description {
+    text-align: justify;
+}
+
+li {
+    padding: 0.5rem;
 }
 
 /* TODO:
