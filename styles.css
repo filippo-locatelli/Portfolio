@@ -10,28 +10,39 @@
 html {
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
 }
 
 body {
     background-color: palegoldenrod;
-    display: flex;
-    justify-content: center;
-}
-
-main {
+/*     display: flex;
+    justify-content: center; */
+    width: 80%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     border: 2px solid black;
     margin: 0 auto;
     padding: 0 10% 1rem;
-    background-color: aquamarine;
     box-shadow: 0 1.2rem 25px 5px goldenrod;
     border-radius: 1rem;
+}
+
+main {
+    width: 75%;
+} 
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    /* border: 2px solid black; */
 }
 
 h1 {
     text-align: center;
     font-size: 3rem;
+    grid-column: 1 / -1;
 }
 
 .img-container {
@@ -40,7 +51,7 @@ h1 {
     border: 2px solid black;
     border-radius: 50%;
     margin: 2rem 0;
-    transform: translateX(10%);
+    justify-content: left;
 }
 
 img {
@@ -53,16 +64,56 @@ img {
 .infos {
     /* text-align: center; */
     font-size: 1.4rem;
+    padding: 2rem 1rem;
+    align-self: center;
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.info {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 5px;
+    vertical-align: middle;
+    margin-bottom: 1rem;
 }
 
 .span-info {
     text-align: left;
     font-weight: bold;
+    margin: 0;
 }
 
-.info {
+
+
+.data-info {
     text-align: right;
 }
+
+.links {
+    grid-column: 1 / -1;
+    height: 4rem;
+    width: 100%;
+    display: grid;
+    font-size: 3rem;
+   /*  grid-template-columns: repeat(5, 1fr); */
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.icon {
+    color: palegoldenrod;
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 10%;
+    background-color: blue;
+    text-align: center;
+}
+
+/* TODO:
+    - change links!
+    - choose colors!
+    - add the rest
+*/
