@@ -1,5 +1,5 @@
-Portfolio Website project
+Personal website of Filippo Locatelli, visit to see my CV and find links to my personal accounts.
 
-to see html page go to: 
+To visit the website go to:
 
-https://raw.githack.com/filippo-locatelli/Portfolio/812e6afb407e1148211551288a1ad2c9fba1da21/index.html
+https://filippo-locatelli.github.io/Portfolio/
